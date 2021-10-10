@@ -1,0 +1,444 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.container{
+    background: #f1f2f5;
+    width: 1349px;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background: #0b0b75;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 3000;
+}
+
+.left__side{
+    display: flex;
+}
+
+.left__side > img{
+    width: 130px;
+    margin-left: 30px;
+    filter: invert(1);
+}
+
+.search__field{
+    background: #2b6ed354;
+    display: flex;
+    padding: 5px;
+    margin: 10px;
+    width: 350px;
+    border-radius: 2px;
+    margin-left: 100px;
+}
+
+.search__field > input{
+    width: 90%;
+    outline: none;
+    background: transparent;
+    border: none;
+    color: white;  
+}
+::placeholder{
+    color: white;
+}
+.search__field > span{
+    color: rgba(255, 255, 255, 0.685);
+    margin: 0px 0px 0px 15px;  
+}
+
+.first__btn,
+.second__btn{
+    margin: 10px;
+    padding: 10px 40px;
+    color: white;
+    font-size: 15px;
+    background: none;
+    outline: none;
+    border: 1px solid white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.second__btn{
+    background: rgb(28, 224, 87);
+    border: none;    
+}
+
+.book__section {
+    width: 75%;
+    margin: 0px auto;
+    margin-top: 30px;
+    padding-bottom: 10px;
+}
+
+.book__section::before{
+    content: url('./image/SEND\ _\ Freight\ App-1.svg');
+    transform: translate(-50% 50%);
+    width: 18px;
+    position: absolute;
+    left: 90px;
+    margin-top: 7px;
+}
+
+.book__section > h2{
+    margin-bottom: 20px;
+    color: #303030;
+    font-size: 26px;
+    font-weight: 900;
+}
+
+/* body style */
+.body__content{
+    /* width: 75%; */
+    width: 1020px;
+    margin: 30px auto;
+    background: #ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.body__content > h5{
+    color: #303030;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 40px;
+    margin-top: 25px;
+}
+
+
+.card__container{
+    display: flex;
+    width: 97%;
+    margin: 30px auto;
+}
+
+.cards{
+    width: 550px;
+    margin: 0px 20px;
+    border-radius: 4px;
+    height: 90px;
+    border: 1px solid #d0d5d9;
+    color: #81868c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    transition: 700ms;
+    overflow: hidden;
+}
+
+.uid::after{
+    content: url("./image/SEND\ _\ Freight\ App-2.svg");
+    margin: -30px;
+    filter: invert(1);
+    width: 70px;
+    position: relative;
+    transform: rotate(-45deg);
+    bottom: -30px;
+    right: -10px;
+}
+
+.one::after{
+    content: url("./image/SEND\ _\ Freight\ App-3.svg");
+    width: 70px;
+    filter: invert(0.5);
+    margin: -10px;
+    position: relative;
+    bottom: -27px;
+    right: -20px;    
+}
+
+.two::after{
+    content: url("./image/SEND\ _\ Freight\ App-4.svg");
+    width: 80px;
+    filter: invert(0.5);
+    margin: -7px;
+    position: relative;
+    bottom: -20px;
+    right: -20px;     
+}
+
+.three::after{
+    content: url("./image/SEND\ _\ Freight\ App-5.svg");
+    width: 80px;
+    filter: invert(0.5);
+    margin: -34px;
+    position: relative;
+    bottom: -20px;
+    right: -23px;  
+}
+.cards:active{
+    background: #0b0b75;
+    color: white;
+}
+
+.cards p{
+    font-size: 16px;
+}
+
+
+.cards img{
+    width: 60px;
+    margin-right: 0px;
+}
+
+
+.uid{
+    background: #0b0b75;
+    color: white;
+}
+
+
+.second h5{
+    color: #53585f;
+}
+
+.row__one{
+    display: flex;
+    margin: 20px;
+}
+
+.btn__section{
+    display: flex;
+    margin-left: 20px;
+}
+.btn__section > button{
+    padding: 10px 20px;
+    font-weight: bold;
+    background: none;
+    outline: none;
+    border: 1px solid #d0d5d9;
+    cursor: pointer;
+}
+
+.second > img{
+    width: 20px;
+    margin: 25px 40px 0px;
+    transform: rotate(-180deg);
+}
+
+.input__field__one > img{
+    width: 20px;
+}
+.input__field__two > img{
+    width: 20px;
+}
+.input__field__one, .input__field__two{
+    background: #f1f2f5;
+    width: 70%;
+    margin: 0px 30px;
+    padding: 7px 0px 7px 20px;
+    color: rgb(63, 57, 57);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.input__field__one > input, .input__field__two > input{
+    width: 80%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+.row__one ::placeholder{
+    color: rgb(63, 57, 57);
+    font-weight: bold;
+}
+
+.new{
+    margin-left: 20px;
+}
+
+.text__container{
+    margin: 40px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.toggle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-right: 15px;
+
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 40px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #0b0b75;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #0b0b75;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.body__contentContainer{
+    display: flex;
+    margin: 10px 40px;
+    background: #f1f2f5;
+    width: 35%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.body__contentContainer > button{
+    color: #0239af;
+    padding: 10px;
+    font-weight: 900;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding-right: 50px;
+    margin-left: -1px;
+    font-size: 14px;
+    background: #ffff;
+}
+
+.body__contentContainer > p{
+    font-weight: bold;
+    padding-right: 10px;
+    color: #ccc;
+}
+
+.third > .input__field__two{
+    display: flex;
+    justify-content: space-around;
+    background: red;
+    margin: 0px 40px;
+    width: 35%;
+}
+
+.new__field{
+    width: 40%;
+    margin: 40px 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.new__field > input{
+    width: 43%;
+    padding: 20px 0px;
+    font-size: 17px;
+    margin-top: 10px;
+    outline: none;
+    border: 1px solid #c6cbda;
+}
+
+.new__fieldtext input{
+    padding: 20px 10px;
+    width: 75%;
+    outline: none;
+    border: 1px solid #c6cbda;
+    
+}
+
+.new__fieldtext ::placeholder{
+    color: #303030;
+    text-align: right;
+}
+
+.new__fieldtext span{
+    background: white;
+    position: absolute;
+    margin-left: 20px;
+    padding: 5px;
+    margin-top: -15px;
+    color: #303030;
+    font-weight: bold;
+}
+
+.fourth{
+    margin-bottom: 100px;
+}
+
+.fourth > .first__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px;
+}
+
+.first__row p{
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.last{
+    margin-right: 17px;
+}
